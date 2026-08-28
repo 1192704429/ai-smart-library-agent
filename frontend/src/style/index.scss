@@ -1,0 +1,159 @@
+@use "theme";
+@use "transition";
+@use "element-plus";
+@use "sidebar";
+@use "dark";
+@import "page.css";
+
+/* 自定义全局 CssVar */
+:root {
+  /* 左侧菜单展开、收起动画时长 */
+  --pure-transition-duration: 0.28s;
+
+  /* 布局尺寸 */
+  --pure-sidebar-width: 240px;
+  --pure-sidebar-collapse-width: 64px;
+  --pure-header-height: 56px;
+  --pure-sidebar-logo-height: var(--pure-header-height);
+  --pure-tags-height: 40px;
+
+  /* 内容区 */
+  --pure-main-bg: #eef1f8;
+  --pure-content-bg: #fff;
+  --pure-content-radius: 16px;
+  --pure-content-shadow: 0 1px 3px rgb(30 27 68 / 4%),
+    0 6px 24px rgb(99 102 241 / 7%);
+
+  /* 常用border-color 需要时可取用 */
+  --pure-border-color: rgb(99 102 241 / 10%);
+
+  /* switch关闭状态下的color 需要时可取用 */
+  --pure-switch-off-color: #a6a6a6;
+
+  /** 主题色 */
+  --pure-theme-sub-menu-active-text: initial;
+  --pure-theme-menu-bg: none;
+  --pure-theme-menu-hover: none;
+  --pure-theme-sub-menu-bg: transparent;
+  --pure-theme-menu-text: initial;
+  --pure-theme-sidebar-logo: none;
+  --pure-theme-menu-title-hover: initial;
+  --pure-theme-menu-active-before: transparent;
+}
+
+/* 灰色模式 */
+.html-grey {
+  filter: grayscale(100%);
+}
+
+/* 色弱模式 */
+.html-weakness {
+  filter: invert(80%);
+}
+
+/* 内容区全局组件样式 */
+.main-content {
+  .el-card {
+    border-color: rgb(99 102 241 / 8%);
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgb(99 102 241 / 5%);
+
+    .el-card__header {
+      font-weight: 600;
+      border-bottom-color: rgb(99 102 241 / 8%);
+    }
+  }
+
+  .el-table {
+    --el-table-header-bg-color: rgb(99 102 241 / 6%);
+    --el-table-tr-bg-color: #fff;
+    --el-table-row-hover-bg-color: rgb(99 102 241 / 4%);
+  }
+
+  .el-table th.el-table__cell {
+    font-weight: 600;
+    color: #4338ca;
+  }
+
+  .el-button--primary {
+    box-shadow: 0 2px 8px rgb(99 102 241 / 25%);
+  }
+
+  .el-pagination.is-background .el-pager li.is-active {
+    background-color: #6366f1;
+  }
+
+  .el-empty__description {
+    color: #9ca3af;
+  }
+
+  .el-descriptions {
+    --el-descriptions-item-bordered-label-background: rgb(99 102 241 / 4%);
+  }
+}
+
+html.dark .main-content {
+  .sl-page-title,
+  .sl-detail-title,
+  .sl-profile-name,
+  .sl-section-title {
+    color: #e0e7ff;
+  }
+
+  .sl-page-desc,
+  .sl-stat-card__label,
+  .sl-detail-author {
+    color: #9ca3af;
+  }
+
+  .sl-page-header,
+  .sl-pagination {
+    border-color: rgb(99 102 241 / 12%);
+  }
+
+  .sl-page-toolbar,
+  .sl-detail-hero,
+  .sl-profile-hero {
+    background: rgb(99 102 241 / 8%);
+    border-color: rgb(99 102 241 / 15%);
+  }
+
+  .sl-stat-card,
+  .sl-shortcut-card {
+    background: linear-gradient(180deg, rgb(255 255 255 / 4%), rgb(99 102 241 / 6%));
+    border-color: rgb(99 102 241 / 15%);
+  }
+
+  .welcome-recommend-title {
+    color: #e0e7ff;
+  }
+
+  .welcome-recommend-desc {
+    color: #9ca3af;
+  }
+
+  .sl-table-panel {
+    background: linear-gradient(180deg, rgb(255 255 255 / 3%), rgb(99 102 241 / 6%));
+    border-color: rgb(99 102 241 / 15%);
+  }
+
+  .sl-admin-table {
+    --el-table-header-bg-color: rgb(99 102 241 / 10%);
+    --el-table-header-text-color: #e0e7ff;
+    --el-table-row-hover-bg-color: rgb(99 102 241 / 8%);
+    --el-fill-color-lighter: rgb(99 102 241 / 5%);
+  }
+
+  .sl-admin-table .el-table__body td.el-table__cell {
+    color: #d1d5db;
+  }
+
+  .sl-admin-date {
+    color: #9ca3af;
+  }
+
+  .sl-admin-id {
+    color: #9ca3af;
+    background: rgb(99 102 241 / 10%);
+  }
+}
