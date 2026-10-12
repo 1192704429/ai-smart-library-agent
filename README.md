@@ -21,7 +21,7 @@
 | 用户端 | 用户 | 登录注册、AI 智能推荐、语义查询、智阅助手、借阅记录、藏书书架 |
 
 
-![功能模块图](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/azhou_promotion/img/module_structure/func_module_6ed32f5cc64d4f78954499d7ad228a0f.png)
+![功能模块图](docs/images/01-func-module.png)
 
 
 ## 三、技术栈说明
@@ -54,19 +54,19 @@
 
 用户管理页：管理系统用户账号，控制账号启用状态
 
-![用户管理页：管理系统用户账号，控制账号启用状态](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/ef66edc6-533c-4589-8970-c14776444e9c.png)
+![用户管理页：管理系统用户账号，控制账号启用状态](docs/images/02-yong-hu-guan-li.png)
 
 图书管理：管理员管理馆藏图书，支持新增编辑删除操作
 
-![图书管理：管理员管理馆藏图书，支持新增编辑删除操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/99ebcd2c-0fa6-4c39-8cb3-8228cb09317c.png)
+![图书管理：管理员管理馆藏图书，支持新增编辑删除操作](docs/images/03-tu-shu-guan-li.png)
 
 借阅审核页：查看全馆借阅动态，按状态筛选借还记录
 
-![借阅审核页：查看全馆借阅动态，按状态筛选借还记录](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/6b3a4c94-c26a-4c2a-8632-67e5205acf9d.png)
+![借阅审核页：查看全馆借阅动态，按状态筛选借还记录](docs/images/04-jie-yue-shen-he.png)
 
 运营统计页：查看智能图书馆各类运营统计数据
 
-![运营统计页：查看智能图书馆各类运营统计数据](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/b9208986-4a2a-44fc-8cde-9fab1bf6b4dd.png)
+![运营统计页：查看智能图书馆各类运营统计数据](docs/images/05-yun-ying-tong-ji.png)
 
 
 ### 用户端
@@ -88,31 +88,31 @@
 
 登录页：用户输入账号密码，登录智能图书馆系统
 
-![登录页：用户输入账号密码，登录智能图书馆系统](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/0c122a1e-1013-4a00-8d7b-02da619326ff.png)
+![登录页：用户输入账号密码，登录智能图书馆系统](docs/images/06-deng-lu.png)
 
 首页：展示AI推荐书籍，提供核心功能入口
 
-![首页：展示AI推荐书籍，提供核心功能入口](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/cd3864c9-3d38-4c9c-8da8-ff31f593e263.png)
+![首页：展示AI推荐书籍，提供核心功能入口](docs/images/07-shou-ye.png)
 
 书籍查询页：通过检索筛选，查找符合需求的馆藏图书
 
-![书籍查询页：通过检索筛选，查找符合需求的馆藏图书](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/1b0e7ce7-6906-4f0d-8ffa-5550d36e521a.png)
+![书籍查询页：通过检索筛选，查找符合需求的馆藏图书](docs/images/08-shu-ji-cha-xun.png)
 
 详情页：展示图书详情，支持借阅、收藏与评论
 
-![详情页：展示图书详情，支持借阅、收藏与评论](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/410a8556-2187-4194-8e19-fa4729dccd39.png)
+![详情页：展示图书详情，支持借阅、收藏与评论](docs/images/09-xiang-qing.png)
 
 智阅助手页：和AI智阅助手交互，完成Java书籍推荐与借阅
 
-![智阅助手页：和AI智阅助手交互，完成Java书籍推荐与借阅](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/a17f5c18-1628-4220-8be1-bc7ec99ac62f.png)
+![智阅助手页：和AI智阅助手交互，完成Java书籍推荐与借阅](docs/images/10-zhi-yue-zhu-shou.png)
 
 藏书书架页：展示用户收藏的图书，方便查阅与借阅
 
-![藏书书架页：展示用户收藏的图书，方便查阅与借阅](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/793aae68-a06b-4b54-895c-7f4eaecc6f4f.png)
+![藏书书架页：展示用户收藏的图书，方便查阅与借阅](docs/images/11-cang-shu-shu-jia.png)
 
 借阅记录页：查看个人借阅记录，支持在线归还操作
 
-![借阅记录页：查看个人借阅记录，支持在线归还操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-08-26/d803a3f3-987b-4d07-801e-15c12d01e4f3.png)
+![借阅记录页：查看个人借阅记录，支持在线归还操作](docs/images/12-jie-yue-ji-lu.png)
 
 
 ## 五、主要业务流程
